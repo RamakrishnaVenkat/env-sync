@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 // import Wastemngment from './Pages/wasteManagement/Wastemngment'
 // import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
 // import Blog from './Pages/Blog/Blog'
+import Signin from './Pages/Signin/Signin'
 function App() {
 
 
@@ -16,6 +17,7 @@ function App() {
       {/* <Blog/> */}
       {/* <Chooseinitiative/> */}
       {/* <Wastemngment/> */}
+      <Signin/>
       
     </>
   )
