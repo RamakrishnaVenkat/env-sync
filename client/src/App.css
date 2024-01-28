@@ -1,8 +1,13 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- :root {
+
+
+
+:root {
+
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #D9D9D9;
@@ -53,7 +58,10 @@
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
-} */
+
+} 
+
+
  .input {
   color: var(--dl-color-gray-black);
   cursor: auto;
@@ -62,7 +70,8 @@
   border-width: 1px;
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
-}
+ }
+
 .textarea {
   color: var(--dl-color-gray-black);
   cursor: auto;
@@ -152,7 +161,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-custom-accent2);
+  background-color: var(--dl-color-custom-primary1);
 }
 .featuresCard {
   color: var(--dl-color-custom-neutral-dark);
