@@ -1,40 +1,41 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import './App.css'
 import Home from './views/home'
-// import Initiative from './Pages/Initiative/Initiative'
-
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Wastemngment from './Pages/wasteManagement/Wastemngment'
 import Airquality from './Pages/AirQuality/Airquality'
-// import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
 
-//import Navbar from './components/Navbar'
-//import Wastemngment from './Pages/wasteManagement/Wastemngment'
+// import Initiative from './Pages/Initiative/Initiative'
 import InitiativeAfter from './Pages/Initiative/InitiativeAfter'
 //import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
 import CreateInitiate from './Pages/Initiative/CreateInitiate'
-import Login from './Pages/login'
+// import Login from './Pages/login'
 
+import UnauthorizedRoutes from "./routes/UnauthorizedRoutes";
+import AuthorizedRoutes from "./routes/AuthorizedRoutes";
 function App() {
 
 
   return (
     <>
-      {/* <Home/> */}
-      <Navbar/>
-      {/* <Initiative/> */}
-      <Airquality/>
-      {/* <Chooseinitiative/> */}
-      {/* <Wastemngment/> */}
+       <Router>
+        {/* <Navbar /> */}
+        <Routes>
+          {/* UNAUTHORIZED ROUTES */}
+          <Route element={<UnauthorizedRoutes />}>
+            <Route path="/" element={<Home />}/>
+            <Route path="/air-quality" element={<Airquality />}/>
+            <Route path="/waste-management" element={<Wastemngment />}/>
+          </Route>
 
-       
-      
-      
-      <Login/>
-
-      
-      
-
-      
+          {/* AUTHORIZED ROUTES
+          <Route element={<AuthorizedRoutes />}>
+           
+           
+          </Route> */}
+        </Routes>
+      </Router>
     </>
   )
 }

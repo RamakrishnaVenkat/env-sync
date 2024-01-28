@@ -14,7 +14,7 @@ const Home = (props) => {
         <title>env-sync</title>
         <meta property="og:title" content="Usable Identical Squid" />
       </Helmet>
-      <div className="home-header">
+      {/* <div className="home-header">
         <header
           data-thq="thq-navbar"
           className="navbarContainer home-navbar-interactive"
@@ -38,7 +38,7 @@ const Home = (props) => {
             </svg>
           </div>
         </header>
-      </div>
+      </div> */}
       <div id='home' className="home-hero">
         <div className="heroContainer home-hero1">
           <div className="home-container01">
