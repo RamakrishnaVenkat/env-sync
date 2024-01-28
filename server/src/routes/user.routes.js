@@ -18,18 +18,8 @@ const router = Router();
 router.post(
   "/register",
   //injecting the multer middleware to upload file, if the file name "avatar" or "coverImage" exsits in the request, then this middleware runs
-  upload.fields([
-    {
-      name: "avatar",
-      maxCount: 1,
-    },
-    {
-      name: "coverImage",
-      maxCount: 1,
-    },
-  ]),
-  registerUser
-);
+  upload.single("avatar"),
+  registerUser)
 //2. LOGIN USER
 router.post("/login", loginUser);
 

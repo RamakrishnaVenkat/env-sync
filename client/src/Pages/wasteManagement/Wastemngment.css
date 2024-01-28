@@ -1,7 +1,6 @@
 body{
     font-family: sans-serif;
     background-color: #f0f2f5;
-
 }
 
 .wrapper{
@@ -10,7 +9,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     gap: 1px;
-    margin-top: 30px;
+    padding-top: 120px;
     /* margin: 15px; */
     /* justify-content: space-between; */
 

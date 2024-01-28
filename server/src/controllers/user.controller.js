@@ -30,15 +30,15 @@ export const registerUser = async (req, res) => {
 
   //3. CHECK FOR IMAGES IN LOCALPATH AND UPLOAD IN CLOUDINARY
   //just like how express provides "req.body", multer provides "req.files"
-  const avatarLocalPath = req.files?.avatar[0]?.path;
+  const avatarLocalPath = req.file?.path;
 
   //since avatar is required, throw error if avatar is not found
-  if (!avatarLocalPath) throw new ApiError(400, "Avatar is required!");
+
 
   const avatar = await uploadOnCloudinary(avatarLocalPath);
  
   //just double checking
-  if (!avatar) throw new ApiError(400, "Avatar is required!");
+  // if (!avatar) throw new ApiError(400, "Avatar is required!");
 
   //4. ONCE WE HAVE ALL THE REQUIRED DETAILS SEND IT TO THE DATABASE
   const user = await User.create({
@@ -46,7 +46,7 @@ export const registerUser = async (req, res) => {
     fullName,
     email,
     password,
-    avatar: avatar.url,
+    avatar: avatar?.url,
   });
 
   //5. CHECK IF THE USER IS CREATED SUCCESSFULLY
