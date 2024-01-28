@@ -46,7 +46,7 @@ function App() {
       
 
        <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           {/* UNAUTHORIZED ROUTES */}
           <Route element={<UnauthorizedRoutes />}>
