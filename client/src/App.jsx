@@ -8,6 +8,9 @@ import Navbar from './components/Navbar'
 // import Wastemngment from './Pages/wasteManagement/Wastemngment'
 // import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
 // import Blog from './Pages/Blog/Blog'
+<<<<<<< HEAD
+import Signin from './Pages/Signin/Signin'
+=======
 
 import Home from './views/home'
 // import Navbar from './components/Navbar'
@@ -23,12 +26,23 @@ import CreateInitiate from './Pages/Initiative/CreateInitiate'
 import UnauthorizedRoutes from "./routes/UnauthorizedRoutes";
 import AuthorizedRoutes from "./routes/AuthorizedRoutes";
 
+>>>>>>> 57370f94ba8ea24000eb5901521e9344dcfb7714
 function App() {
 
 
   return (
     <>
+<<<<<<< HEAD
+      {/* <Home/> */}
+      <Navbar/>
+      {/* <Initiative/> */}
+      {/* <Blog/> */}
+      {/* <Chooseinitiative/> */}
+      {/* <Wastemngment/> */}
+      <Signin/>
+=======
 
+>>>>>>> 57370f94ba8ea24000eb5901521e9344dcfb7714
       
 
        <Router>
