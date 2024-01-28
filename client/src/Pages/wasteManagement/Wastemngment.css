@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+    background-color: #f0f2f5;
 
 }
 
@@ -131,32 +132,42 @@ p> span{
     /* transform: translate(-50%,-50%); */
 }
 .waste-management-result{
-    background-color: blue;
+    padding: 20px;
+    background-color: #4ac36ec8;
     border-radius: 10px;
     margin-top: 10px;
     padding: 5px;
     font-size: 18px;
     height: 50vh;
+    
     /* padding: 0px 70px; */
 }
 .waste-management-list-row{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    /* display: flex; */
+    width: 50%;
+    margin: auto;
 }
 .waste-management-list{
-    color:  #A8A8A8;
+    color:  #434040;
 }
 .waste-management-output-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0px 20px;
 }
 .waste-management-output-card{
     border-radius: 10px;
     background-color: yellow;
+    padding: 10px;
 }
-
+.list-items{
+    font: bold;
+    font-size: 22px;
+}
 
 
 
