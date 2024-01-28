@@ -25,7 +25,7 @@ const InitiationAfter = () => {
 
     return (
         <div style={{ backgroundColor: '#f0f2f5' ,display: 'flex', height: '100%' }}>
-          <div style={{ flex: '3', backgroundColor: '#f0f2f5' }} >
+          <div style={{ flex: '3', backgroundColor: '#f0f2f5', overflowY: 'auto' }} >
             <h2 className="text-5xl font-semibold pt-5 mb-1 pl-5">Do something good today.</h2>
             <h2 className="text-2xl font-semibold mb-4 pl-5">Volunteer for a programme in your area</h2>
 
@@ -48,20 +48,19 @@ const InitiationAfter = () => {
                     <h2 className="text-2xl font-semibold mb-5">Lead and start your own programme</h2>
                 </div>
                 <div className='pr-20 mr-20'>
-                    <button className="px-4 py-2 bg-lime-950 text-white text-xl rounded-md">Start a Programme</button>
+                    <button className="px-4 py-2 bg-black text-white text-xl rounded-md">Start a Programme</button>
                 </div>
             </div>
 
             <div style={{ backgroundColor: '#f0f2f5' }}>
                 <div className="mx-auto max-w-7xl px-2 lg:px-0 " >
                 <div className="mx-auto max-w-7xl px-2 lg:px-0">
-      <div className="mx-auto max-w-3xl md:text-center">
+      <div className="mx-auto max-w-4xl md:text-center">
         <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
-          People who made it successful
+          Feedbacks
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-gray-600 md:text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam reiciendis a vel error
-          explicabo voluptatum nihil possimus veritatis eos culpa.
+          People share their valuable experiences with us on each of us motivating us to participate in the same
         </p>
       </div>
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -73,10 +72,10 @@ const InitiationAfter = () => {
               className="h-[200px] w-full rounded-t-md object-cover"
             />
             <div className="p-4">
-              <h1 className="text-lg font-semibold">Jenifer Lopez</h1>
-              <h6 className="mt-3 font-medium">Founder and CEO, DevUI</h6>
+              <h1 className="text-lg font-semibold">Jenifer</h1>
+              <h6 className="mt-3 font-medium">Chegalpet</h6>
               <p className="mt-3 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+                Participated in tree plantation programme, it was wonderful.
               </p>
               <div className="mt-4 flex flex-wrap">
                 <div className="w-auto p-1.5">
@@ -143,25 +142,42 @@ const InitiationAfter = () => {
             </div>
             </div>
 
-            <div  style={{ flex: '1', backgroundColor: '#205A14'}} className='p-5 '>
+            <div  style={{ flex: '1', backgroundColor: '#205A14' }} className='p-5  '>
               <h2 style={{ color: 'white', fontSize: '24px',textAlign: 'center' }} className='pb-5'>Registered Events</h2>
             <div className=" w-80px   items-center  rounded-md border md:flex-row" style={{backgroundColor: '#f0f2f5'}}>
       
       <div>
         <div className="p-4">
           <h1 className="inline-flex items-center text-lg font-semibold">
-            Event name
+            TreeVagenzaa
           </h1>
           <p className="mt-3 text-sm text-gray-600">
-            date
+            07-02-2024
           </p>
           <p className="mt-3 text-sm text-gray-600">
-            venue
+            Porur
           </p>
           
+          </div>
+        </div>
+
+      </div>
+      <div className=" w-80px   items-center  rounded-md border md:flex-row" style={{backgroundColor: '#f0f2f5'}}>
+      
+      <div>
+        <div className="p-4">
+          <h1 className="inline-flex items-center text-lg font-semibold">
+            CleanUp
+          </h1>
+          <p className="mt-3 text-sm text-gray-600">
+            04-03-2024
+          </p>
+          <p className="mt-3 text-sm text-gray-600">
+            Besant Nagar
+          </p>
+        </div>
           
         </div>
-      </div>
     </div>
             
             </div>
