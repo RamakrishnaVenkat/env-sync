@@ -1,58 +1,71 @@
-import { useState } from "react";
-import {
-  BsFillArrowRightCircleFill,
-  BsFillArrowLeftCircleFill,
-} from "react-icons/bs";
-export default function Chooseinitiative({ slides }) {
-  let [current, setCurrent] = useState(0);
+import React from 'react';
 
-  let previousSlide = () => {
-    if (current === 0) setCurrent(slides.length - 1);
-    else setCurrent(current - 1);
-  };
-
-  let nextSlide = () => {
-    if (current === slides.length - 1) setCurrent(0);
-    else setCurrent(current + 1);
-  };
-
+function Chooseinitiative() {
   return (
-    <div className="overflow-hidden relative">
-      <div
-        className={`flex transition ease-out duration-40`}
-        style={{
-          transform: `translateX(-${current * 100}%)`,
-        }}
-      >
-        {slides.map((s) => {
-          return <img src={s} />;
-        })}
+    <div className="flex justify-center">
+      <div style={{ marginTop: '50px' , padding:'30px'}}>
+        <div className="relative h-[600px] w-[400px] rounded-md">
+          <button className='h-[600px] w-[400px] hover:scale-105 transition-transform duration-300 hover:opacity-70' >
+          <img
+            src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            <h1 className="text-lg font-semibold text-white">Delba</h1>
+            <p className="mt-2 text-sm text-gray-300">
+              Wanna initiate a tree planting initiative?
+            </p>
+            
+          </div>
+          </button>  
+        </div>
+        
       </div>
 
-      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
-        <button onClick={previousSlide}>
-          <BsFillArrowLeftCircleFill />
-        </button>
-        <button onClick={nextSlide}>
-          <BsFillArrowRightCircleFill />
-        </button>
+      <div style={{ marginTop: '50px', marginLeft: '20px', marginRight: '20px', padding:'30px' }}>
+        <div className="relative h-[600px] w-[400px] rounded-md">
+          <button className='h-[600px] w-[400px] hover:scale-105 transition-transform duration-300 hoover:opacity-70'>
+          <img
+            src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            <button className="text-lg font-semibold text-white">Delba</button>
+            <p className="mt-2 text-sm text-gray-300">
+              Clean your nearest beach and other public places
+            </p>
+          </div>
+      </button>
+
+        </div>
+        
       </div>
 
-      <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
-        {slides.map((s, i) => {
-          return (
-            <div
-              onClick={() => {
-                setCurrent(i);
-              }}
-              key={"circle" + i}
-              className={`rounded-full w-5 h-5 cursor-pointer  ${
-                i == current ? "bg-white" : "bg-gray-500"
-              }`}
-            ></div>
-          );
-        })}
+      <div style={{ marginTop: '50px' , padding:'30px'}}>
+        <div className="relative h-[600px] w-[400px] rounded-md">
+          <button className='h-[600px] w-[400px] hover:scale-105 transition-transform duration-300 hoover:opacity-70 '>
+          <img
+            src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+            alt="AirMax Pro"
+            className="z-0 h-full w-full rounded-md object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+          <div className="absolute bottom-4 left-4 text-left">
+            
+            <p className="mt-2 text-sm text-gray-300">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+            </p>
+            
+          </div>
+          </button>
+        </div>
       </div>
     </div>
   );
 }
+
+export default Chooseinitiative;
