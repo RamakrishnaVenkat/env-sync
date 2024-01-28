@@ -79,7 +79,7 @@ function Wastemngment() {
                 <h1 className="paraHeading">
                     Smart Waste <br /><span>Management</span>
                 </h1>
-               <p></p>
+               <p>Transforming <span>waste </span>through vision: <span>ML Optimized</span> disposal for a cleaner world.</p>
 
             </div>
             </div>
@@ -115,8 +115,34 @@ function Wastemngment() {
       </div>
         </div>
            
-      </>
+
+
+        <div className="waste-management-result">
+            <div className="waste-management-list-row">
+                <div className="waste-management-list">
+                    <ol className="list-items">
+                        <li>1. Upload the image of the waste products that you want to dispose</li>
+                        <li>2. Wait for our model to predict the results</li>
+                        <li>3. Take actions accordingly</li>
+                    </ol>
+                </div>
+            </div> 
+            <div className="waste-management-output-row">
+                <div className="waste-management-output-card">
+                    hello<br />
+                    hi
+                    
+                </div>
+                <div className="waste-management-output-card">
+                    heyy
+                </div>
+                <div className="waste-management-output-card">
+                    hola
+                </div>
+            </div>
+        </div>
+        </>
     );
 }
 
-export default Wastemngment
+export default Wastemngment;
