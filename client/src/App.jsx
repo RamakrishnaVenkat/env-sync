@@ -1,6 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import './App.css'
+
+// import Home from './views/home'
+// import Initiative from './Pages/Initiative/Initiative'
+import Navbar from './components/Navbar'
+// import Wastemngment from './Pages/wasteManagement/Wastemngment'
+// import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
+// import Blog from './Pages/Blog/Blog'
+
 import Home from './views/home'
 // import Navbar from './components/Navbar'
 import Wastemngment from './Pages/wasteManagement/Wastemngment'
@@ -14,11 +22,15 @@ import CreateInitiate from './Pages/Initiative/CreateInitiate'
 
 import UnauthorizedRoutes from "./routes/UnauthorizedRoutes";
 import AuthorizedRoutes from "./routes/AuthorizedRoutes";
+
 function App() {
 
 
   return (
     <>
+
+      
+
        <Router>
         {/* <Navbar /> */}
         <Routes>

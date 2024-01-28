@@ -12,7 +12,7 @@ const Home = (props) => {
     <div className="home-container">
       <Helmet>
         <title>env-sync</title>
-        <meta property="og:title" content="Usable Identical Squid" />
+        <meta property="og:title" content="ENV-SYNC" />
       </Helmet>
       {/* <div className="home-header">
         <header
