@@ -18,6 +18,12 @@ import Airquality from './Pages/AirQuality/Airquality'
 import Initiative from "./Pages/Initiative/Initiative";
 
 import InitiativeAfter from './Pages/Initiative/InitiativeAfter'
+
+import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
+import CreateInitiate1 from './Pages/Initiative/CreateInitiate1'
+import Signin from './Pages/Signin'
+
+
 //import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
 import CreateInitiate from './Pages/Initiative/CreateInitiate'
 // import Login from './Pages/login'
@@ -25,11 +31,22 @@ import CreateInitiate from './Pages/Initiative/CreateInitiate'
 import UnauthorizedRoutes from "./routes/UnauthorizedRoutes";
 import AuthorizedRoutes from "./routes/AuthorizedRoutes";
 
+
 function App() {
 
 
   return (
     <>
+
+       
+      
+      
+      <InitiativeAfter/>
+
+      
+      
+      
+
 
        <Router>
         <Navbar />
@@ -50,6 +67,7 @@ function App() {
           </Route> */}
         </Routes>
       </Router>
+
     </>
   )
 }
