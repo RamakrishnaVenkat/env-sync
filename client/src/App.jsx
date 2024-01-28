@@ -3,6 +3,7 @@ import './App.css'
 // import Initiative from './Pages/Initiative/Initiative'
 import Navbar from './components/Navbar'
 import Wastemngment from './Pages/wasteManagement/Wastemngment'
+import Airquality from './Pages/AirQuality/Airquality'
 // import Chooseinitiative from './Pages/Initiative/Chooseinitiative'
 function App() {
 
@@ -12,9 +13,9 @@ function App() {
       {/* <Home/> */}
       <Navbar/>
       {/* <Initiative/> */}
-
+      <Airquality/>
       {/* <Chooseinitiative/> */}
-      <Wastemngment/>
+      {/* <Wastemngment/> */}
       
     </>
   )
