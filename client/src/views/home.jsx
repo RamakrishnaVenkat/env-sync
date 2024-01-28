@@ -197,14 +197,14 @@ const Home = (props) => {
             <div className="home-container03">
               <FeatureCard
                 heading="Air Quality Prediction"
-                subHeading="Learn about the importance of environmental conservation and sustainable practices."
+                subHeading="Air Quality Prediction leverages machine learning models to forecast future air pollutant levels based on historical data and environmental variables, aiding in environmental management and public health decisions."
               ></FeatureCard>
               <FeatureCard
                 heading="News and Updates"
-                subHeading="Stay updated with the latest environmental news, events, and initiatives."
+                subHeading="News and updates on air quality prediction focus on advancements in machine learning,to enhance the accuracy of forecasting, aiding environmental monitoring and public health decisions."
               ></FeatureCard>
               <FeatureCard
-                heading="Actionable Tips"
+                heading="Smart Waste Management"
                 subHeading="Discover practical tips and ideas to reduce your carbon footprint and live a more eco-friendly lifestyle."
               ></FeatureCard>
               <FeatureCard
