@@ -13,7 +13,7 @@ function Navbar() {
         >
           <span className="logo">ENV-SYNC</span>
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
-            <nav className="home-links">
+            <nav className="home-links flex">
               <a
                 href="/"
                 className="home-nav12 bodySmall text-3xl md:font-bold"
@@ -33,17 +33,17 @@ function Navbar() {
                 Smart Waste Management
               </a>
               <a
-                href="/event-portal-signin"
+                href="/community-engagement"
                 className="home-nav5 bodySmall text-lg md:font-bold"
               >
                 Community Eengagement
               </a>
-              <a
+              {/* <a
                 href="/blog"
                 className="home-nav5 bodySmall text-lg md:font-bold"
               >
                 Blog
-              </a>
+              </a> */}
             </nav>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">

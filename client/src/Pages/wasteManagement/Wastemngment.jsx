@@ -117,7 +117,7 @@ function Wastemngment() {
            
 
 
-        <div className="waste-management-result">
+        {/* <div className="waste-management-result">
             <div className="waste-management-list-row">
                 <div className="waste-management-list">
                     <ol className="list-items">
@@ -140,7 +140,7 @@ function Wastemngment() {
                     hola
                 </div>
             </div>
-        </div>
+        </div> */}
         </>
     );
 }

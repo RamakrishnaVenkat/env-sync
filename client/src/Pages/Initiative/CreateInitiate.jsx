@@ -162,7 +162,7 @@ function CreateInitiate() {
         </div>
         <div className="flex justify-center items-center">
         <div className="w-80vw h-50vh bg-gray-200 flex justify-center items-center">
-  <p className="text-4xl font-semibold text-black">The amount of volunteers required is 10</p>
+  {/* <p className="text-4xl font-semibold text-black">The amount of volunteers required is 10</p> */}
 </div>
 
     </div>
